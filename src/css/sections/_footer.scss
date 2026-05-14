@@ -1,0 +1,52 @@
+footer {
+  padding: 6rem 0;
+  border-top: 1px solid rgba(206, 210, 218, 0.6);
+
+  .first-block {
+    // max-width: 320px;
+    padding: 2rem 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .brand {
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .logo {
+    display: block;
+    width: 3.4rem;
+  }
+
+  .tnc {
+    color: var(--primary-color);
+    font-weight: 500;
+  }
+
+  @include breakpoint($breakpoint-sm) {
+    .first-block {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+
+  .second-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .copyright {
+      color: var(--black-color);
+      border-top: 1px solid var(--light-color);
+      padding: 2rem 0;
+    }
+  }
+}

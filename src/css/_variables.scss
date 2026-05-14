@@ -1,0 +1,49 @@
+$breakpoint-xs: 576px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+
+$primary-color: #2563eb;
+$secondary-color: #0f766e;
+$black-color: #141c24;
+$dark-color: #344051;
+$white-color: #ffffff;
+$light-color: #ced2da;
+$blue-color: #2563eb;
+$blue-bg-color: #edf5ff;
+
+$column-gap: 3.2rem;
+
+// Functions
+@function hexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+// Mixins
+@mixin breakpoint($breakpoint) {
+  @media only screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin screenheight($breakpoint) {
+  @media only screen and (max-height: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin square($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin flyCenter() {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin fontSerifBold() {
+  font-family: 'PTSerif';
+  font-weight: bold;
+}

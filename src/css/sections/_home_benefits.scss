@@ -1,0 +1,91 @@
+section.key-benefits {
+  padding: 6rem 0;
+  background: #ffffff;
+
+  .container.flex {
+    display: flex;
+    flex-direction: row;
+    gap: #{$column-gap};
+
+    @include breakpoint($breakpoint-sm) {
+      flex-direction: column;
+    }
+
+    .column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &:nth-child(2) {
+        flex-direction: row;
+        gap: #{$column-gap};
+      }
+    }
+  }
+
+  .benefits {
+    .item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      margin-bottom: 2.4rem;
+    }
+
+    .material-icons {
+      display: block;
+      align-self: flex-start;
+      color: var(--blue-color);
+      background-color: var(--blue-bg-color);
+      padding: 8px;
+      border-radius: 10px;
+    }
+
+    h4 {
+      font-size: 2rem;
+    }
+  }
+
+  .images-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: #{$column-gap};
+
+    img {
+      border-radius: 16px;
+      filter: grayscale(100%);
+    }
+  }
+
+  .workflow-panel {
+    display: grid;
+    gap: 1.2rem;
+    width: 100%;
+  }
+
+  .workflow-step {
+    border: 1px solid rgba(206, 210, 218, 0.7);
+    border-radius: 12px;
+    padding: 1.8rem;
+    background: #fbfcff;
+    box-shadow: rgba(15, 23, 42, 0.04) 0 12px 32px;
+
+    .number {
+      color: var(--primary-color);
+      font-weight: 700;
+      font-size: 1.3rem;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    strong {
+      color: var(--black-color);
+      font-size: 1.8rem;
+    }
+
+    p {
+      margin-top: 0.4rem;
+      color: #64748b;
+    }
+  }
+}
