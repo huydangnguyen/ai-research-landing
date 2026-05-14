@@ -4,5 +4,5 @@
  * Init custom functions
  */
 (function initWelcomeMessage() {
-  console.log('Mira landing page init successfully');
+  console.log('NoraLens landing page init successfully');
 })();
