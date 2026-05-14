@@ -4,5 +4,5 @@
  * Init custom functions
  */
 (function initWelcomeMessage() {
-  console.log('QualiPilot landing page init successfully');
+  console.log('Mira landing page init successfully');
 })();
